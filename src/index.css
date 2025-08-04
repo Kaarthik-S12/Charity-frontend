@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .animate-pop-in {
+    animation: popIn 0.6s ease-out both;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out both;
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-bubble-left {
+    animation: bubbleLeft 0.7s ease-out both;
+  }
+  .animate-bubble-left {
+    animation: bubbleLeft 0.7s ease-out both;
+  }
+
+  @keyframes bubbleLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+  @keyframes bubbleLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.7) rotate(-5deg);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.05) rotate(1deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in both;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
