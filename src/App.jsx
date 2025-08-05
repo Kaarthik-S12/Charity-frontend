@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import About from './Pages/About' // Make sure this file exists
 import Login from './Components/Login'
 import Signup from './Components/Signup'
+import DonorHome from './Pages/DonorHome'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/donor" element={<DonorHome />} />
       </Routes>
     </BrowserRouter>
     </>
