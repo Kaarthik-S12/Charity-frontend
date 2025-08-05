@@ -6,6 +6,7 @@ import About from './Pages/About' // Make sure this file exists
 import Login from './Components/Login'
 import Signup from './Components/Signup'
 import DonorHome from './Pages/DonorHome'
+import CharityHome from './Pages/CharityHome'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/donor" element={<DonorHome />} />
+        <Route path="/charity" element={<CharityHome />} />
       </Routes>
     </BrowserRouter>
     </>
