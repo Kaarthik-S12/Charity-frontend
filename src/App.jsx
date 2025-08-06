@@ -7,7 +7,9 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import DonorHome from './Pages/DonorHome'
 import CharityHome from './Pages/CharityHome'
-
+import { AdminHome } from './Pages/AdminHome'
+import CharityProfile from './Components/CharityProfile' 
+import DonorProfile from './Components/DonorProfile'
 function App() {
   return (
     <>
@@ -20,6 +22,9 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/donor" element={<DonorHome />} />
         <Route path="/charity" element={<CharityHome />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="/charity/profile" element={<CharityProfile />} />
+        <Route path="/donor/profile" element={<DonorProfile />} />
       </Routes>
     </BrowserRouter>
     </>
